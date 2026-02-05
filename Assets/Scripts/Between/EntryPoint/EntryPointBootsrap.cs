@@ -17,7 +17,7 @@ public class EntryPointBootsrap : MonoBehaviour
     {
         text.DOColor(new Color(1, 1, 1, 1), 2f);
         yield return new WaitForSeconds(2f);
-        yield return Load.instanse.LoadScene(1);
+        yield return Load.Instanse.LoadScene(1);
     }
     
 

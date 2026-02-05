@@ -22,10 +22,10 @@ public class LoadGame : MonoBehaviour
     }
     private IEnumerator LoadScene()
     {
-        StartCoroutine(Load.instanse.LoadScene(2));
-        while (Load.instanse.load < 0.9f)
+        StartCoroutine(Load.Instanse.LoadScene(2));
+        while (Load.Instanse.load < 0.9f)
         {
-            loadsSlider.value = Load.instanse.load;
+            loadsSlider.value = Load.Instanse.load;
             yield return null;
         }
         loadsSlider.value = 1f;
