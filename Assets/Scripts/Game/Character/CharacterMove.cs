@@ -31,7 +31,7 @@ public class CharacterMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.AddForce(InputActions.Character.Move.ReadValue<Vector2>() * 5);
+        rb.AddForce(InputActions.Character.Move.ReadValue<Vector2>() * EventBus.FOnSpeedCharacter.Invoke(0));
     }
     private void OnDestroy()
     {
