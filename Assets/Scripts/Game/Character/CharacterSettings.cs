@@ -18,7 +18,7 @@ public class CharacterSettings : MonoBehaviour
         EventBus.FOnSpeedCharacter += GetSpeed;
         EventBus.FOnAddTimeDurationWeapon += GetTBW;
         EventBus.FOnAddTimeSpeedWeapon += GetTSW;
-        EventBus.FOnAddTimeSpeedWeapon += GetTCE;
+        EventBus.FOnAddTimeCreateEnemies += GetTCE;
 
         EventBus.AOnSpeedCharacter += AddSpeed;
         EventBus.AOnAddTimeDurationWeapon += AddTDW;
@@ -91,7 +91,7 @@ public class CharacterSettings : MonoBehaviour
         EventBus.FOnSpeedCharacter -= GetSpeed;
         EventBus.FOnAddTimeDurationWeapon -= GetTBW;
         EventBus.FOnAddTimeSpeedWeapon -= GetTSW;
-        EventBus.FOnAddTimeSpeedWeapon -= GetTCE;
+        EventBus.FOnAddTimeCreateEnemies -= GetTCE;
 
         EventBus.AOnSpeedCharacter -= AddSpeed;
         EventBus.AOnAddTimeDurationWeapon -= AddTDW;

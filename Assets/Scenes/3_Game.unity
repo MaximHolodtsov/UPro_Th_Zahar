@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 530980883}
   - component: {fileID: 530980882}
+  - component: {fileID: 530980884}
   m_Layer: 0
   m_Name: EntrPoint
   m_TagString: Untagged
@@ -154,6 +155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefabCharacter: {fileID: 2073310010608840418, guid: 4ae2ff6fa62f75a479194335445ac9a6, type: 3}
   _camera: {fileID: 1032865474}
+  _prefabWeapon: {fileID: 4751546225716853264, guid: 6f28d402111b3024fa9ca414177bee09, type: 3}
+  _weaponManager: {fileID: 530980884}
 --- !u!4 &530980883
 Transform:
   m_ObjectHideFlags: 0
@@ -169,6 +172,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &530980884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530980881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d88e124577533b04ab75a27fee1de59b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefabWeapon: {fileID: 4751546225716853264, guid: 6f28d402111b3024fa9ca414177bee09, type: 3}
 --- !u!1 &1032865470
 GameObject:
   m_ObjectHideFlags: 0
